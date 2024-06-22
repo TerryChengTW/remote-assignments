@@ -16,7 +16,6 @@ body {
     max-height: 48px;
     width: auto;
     align-items: center;
-
 }
 .home {
     display: inline-block;
@@ -66,6 +65,9 @@ body {
     display: block;
 }
 .nav-item {
+    display: block;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
     margin-left: 2em;
     text-decoration: none;
     color: black;
@@ -93,6 +95,70 @@ body {
     width: 2em;
     height: 2em;
 }
+
+/* search bar */
+.search {
+    display: flex;
+    border: 1px none #ccc;
+    background-color: #f1f1f1;
+    border-radius: 6px;
+    margin: 0.3em;
+}
+.search input {
+    border: none;
+    outline: none; /* remove outer border line when clicked */
+    background-color: #f1f1f1;
+    font-size: 1em;
+    height: 2em;
+    border-radius: 6px;
+}
+.search img {
+    width: 1.5em;
+    height: auto;
+}
+
+/* language selector */
+.language-selector {
+    display: flex;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 6px;
+    margin: 0.3em;
+
+}
+.language-selector select {
+    border: none;
+    outline: none;
+    background-color: #fff;
+    font-size: 1em;
+    height: 2em;
+    border-radius: 6px;
+}
+.language-selector img {
+    width: 1.5em;
+    height: auto;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+}
+
+/* dot menu */
+.dot-menu img {
+    margin-left: 0.5em;
+    width: 1.5em;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+
+/* account */
+.account img {
+    width: 2em;
+    height: 2em;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+
+/* ------------------- */
 
 /* ads */
 .ads {

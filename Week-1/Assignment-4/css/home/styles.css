@@ -1,48 +1,88 @@
 body {
     margin: 0;
+    font-family: 'Arial', sans-serif;
 }
 .topbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 3em;
 }
 .left-nav, .right-nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
-
+.main-nav {
+    display:flex;
+    max-height: 48px;
+    width: auto;
+    align-items: center;
+}
+.home {
+    display: inline-block;
+}
 .home img {
-    max-width: 50%;
-    height: auto;
-    margin-left: 1em;
+    max-height: 32px;
+    width: auto;
+    padding-left: 1em;
+    padding-right: 3em;
 }
 
-.main-nav {
+.dropdown {
+    display: flex;
     position: relative;
 }
-.dropdown {
+.dropdown-text {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 2.65em;
     left: 0;
     background-color: white;
-    box-shadow: 0 4 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 -3px 20px rgba(0, 0, 0, 0.1), 0 3px 20px rgba(0, 0, 0, 0.1); /* 添加上下陰影 */
     z-index: 1;
     padding: 1em;
-    min-width: 10em;
+    animation: slideDown 0.5s ease-in-out;
+    height: 50vh;
 }
-.main-nav:hover .dropdown {
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.product-dropdown {
+    width: 100vw; 
+    margin-left: -18.2vw; 
+    left: 50%; 
+}
+.community-dropdown {
+    width: 30vw;
+}
+.dropdown:hover .dropdown-text, .dropdown-text:hover {
     display: block;
 }
 .nav-item {
-    margin-right: 1em;
+    display: block;
+    padding-top: 0.65em;
+    padding-bottom: 0.65em;
+    margin-left: 2em;
     text-decoration: none;
     color: black;
+    position: relative;
 }
+.nav-item.has-dropdown::after {
+    content: '▾'; 
+    margin-left: 0.2em;
+}
+.dropdown:hover .nav-item.has-dropdown::after {
+    content: '▴';
+}
+
 .external-link::after {
-    content: " →";
+    content: " →"; /* if external-link then make a mark */
 }
 
 .search, .language-selector, .dot-menu, .account {
@@ -55,6 +95,70 @@ body {
     width: 2em;
     height: 2em;
 }
+
+/* search bar */
+.search {
+    display: flex;
+    border: 1px none #ccc;
+    background-color: #f1f1f1;
+    border-radius: 6px;
+    margin: 0.3em;
+}
+.search input {
+    border: none;
+    outline: none; /* remove outer border line when clicked */
+    background-color: #f1f1f1;
+    font-size: 1em;
+    height: 2em;
+    border-radius: 6px;
+}
+.search img {
+    width: 1.5em;
+    height: auto;
+}
+
+/* language selector */
+.language-selector {
+    display: flex;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 6px;
+    margin: 0.3em;
+
+}
+.language-selector select {
+    border: none;
+    outline: none;
+    background-color: #fff;
+    font-size: 1em;
+    height: 2em;
+    border-radius: 6px;
+}
+.language-selector img {
+    width: 1.5em;
+    height: auto;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+}
+
+/* dot menu */
+.dot-menu img {
+    margin-left: 0.5em;
+    width: 1.5em;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+
+/* account */
+.account img {
+    width: 2em;
+    height: 2em;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+
+/* ------------------- */
 
 /* ads */
 .ads {

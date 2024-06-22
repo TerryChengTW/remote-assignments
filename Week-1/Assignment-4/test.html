@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .nav {
+            display: flex;
+            background-color: #c6bebe;
+        }
+
+        .nav-item {
+            position: relative;
+        }
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #f9f9f9;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+            min-width: 160px;
+        }
+        .nav-item:hover .dropdown {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="nav-item">
+            <a href="#" class="nav-link">Menu</a>
+            <div class="dropdown">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+        <a href="#" class="nav-link">About</a>
+        <a href="#" class="nav-link">Contact</a>
+    </div>
+</body>
+</html>

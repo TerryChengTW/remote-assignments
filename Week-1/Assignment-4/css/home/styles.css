@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+}
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3em;
+}
+.left-nav, .right-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home img {
+    max-width: 50%;
+    height: auto;
+    margin-left: 1em;
+}
+
+.main-nav {
+    position: relative;
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    padding: 1em;
+    min-width: 10em;
+}
+.main-nav:hover .dropdown {
+    display: block;
+}
+.nav-item {
+    margin-right: 1em;
+    text-decoration: none;
+    color: black;
+}
+.external-link::after {
+    content: " →";
+}
+
+.search, .language-selector, .dot-menu, .account {
+    display:flex;
+    align-items: center;
+    margin-right: 1em;
+}
+
+.search img, .language-selector img, .dot-menu img, .account img {
+    width: 2em;
+    height: 2em;
+}
+
+/* ads */
+.ads {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    background-color: rgb(21, 101, 222);
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.ads-link {
+    padding-left: 0.5em;
+    /* Only when the mouse is over the link, underline dismiss */
+    color: darkblue;
+}
+.ads-link:hover {
+    text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+    .nav-item {
+        display: none;
+    }
+    .nav-item.more {
+        display: block;
+    }
+    .more-dropdown {
+        display: block;
+    }
+}

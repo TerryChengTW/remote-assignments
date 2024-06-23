@@ -410,13 +410,14 @@ body {
     align-items: center;
     margin-top: 20px;
     border-radius: 5px;
-    background-color: rgb(0, 68, 255);
+    border: 1px solid #ddd;
+    background-color: rgb(0, 123, 255);
     padding: 5px 15px;
     font-size: 1.1em;
     color: white;
 }
 .view-tools:hover {
-    background-color: rgba(2, 27, 173, 0.8);
+    background-color: rgb(0, 68, 255);
     cursor: pointer;
 }
 .all-building-link {
@@ -425,6 +426,82 @@ body {
 
 /* ------------------- */
 /* Development focus */
+.development-focus {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    align-items: center;
+    background-color: #f0f3f5;
+    font-size: 1em;
+    height: 70vh;
+}
+.development-focus h1 {
+    font-size: 3em;
+}
+.focus-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 1em;
+}
+.focus-title-sub {
+    display: flex;
+    font-size: 1.5em;
+}
+.focus-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.focus-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 700px;
+    height: 170px;
+    margin: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+.focus-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 垂直居中對齊內容 */
+    flex-grow: 1;
+}
+.focus-item h3{
+    font-size: 1.5em;
+    margin-left: 10px;
+    margin-top: 0px;
+}
+.focus-item p {
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+.focus-item span {
+    padding: 10px;
+    width: 80px;
+    border-radius: 5px;
+    margin-left: 10px;
+    background-color: rgb(0, 123, 255);
+    color: white;
+}
+.focus-item img {
+    height: 110px;
+    width: auto;
+}
+.focus-item img:hover, .focus-item span:hover, .focus-item h3:hover {
+    cursor: pointer;
+}
+.focus-item span:hover {
+    background-color: rgb(0, 68, 255);
+}
+
+/* ------------------- */
+/* Trending news */
 
 
 /* ------------------- */

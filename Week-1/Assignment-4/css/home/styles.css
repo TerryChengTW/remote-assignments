@@ -352,6 +352,83 @@ body {
     padding: 3px;
 }
 
+/* ------------------- */
+/* start building */
+.start-building {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    font-size: 1em;
+}
+.building-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+.building-tools {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 170px;
+    padding-right: 170px;
+    gap: 20px;
+}
+.building-item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    width: 280px;
+    height: 280px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.building-item:hover {
+    text-decoration: underline;
+    text-decoration-color: blue;
+    cursor: pointer;
+}
+
+.building-item img {
+    width: 50px;
+}
+
+.view-tools {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: rgb(0, 68, 255);
+    padding: 5px 15px;
+    font-size: 1.1em;
+    color: white;
+}
+.view-tools:hover {
+    background-color: rgba(2, 27, 173, 0.8);
+    cursor: pointer;
+}
+.all-building-link {
+    text-decoration: none;
+}
+
+/* ------------------- */
+/* Development focus */
+
+
+/* ------------------- */
+/* media */
 @media (max-width: 1000px) {
     .nav-item {
         display: none;

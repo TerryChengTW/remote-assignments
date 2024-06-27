@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #eee;
+    padding: 0 1em;
+}
+.title-logo {
+    display: flex;
+    align-items: center;
+    margin-left: 1em;
+}
+.title {
+    margin-right: 0.5em;
+}
+.logo {
+    height: 1em;
+}
+.menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu-nev{
+    color: black;
+    text-decoration: none;
+    margin-right: 3.5em;
+}
+
+.welcome-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #cfdded;
+    padding: 1.5em;
+    font-size: 1.5em;
+}
+
+.section-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.content {
+    display:flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.content-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #8b99a9;
+    flex: 1 1 45%;
+    box-sizing: border-box;
+    padding: 0.3em;
+    margin: 0.7em;
+    height: 10em;
+}
+
+.action {
+    display: flex;
+    justify-content: center;
+}
+.action #select-cursor  {
+    background-color: #cfe2f3;
+    border: none;
+    padding: 1em 2em;
+    cursor: pointer;
+}
+
+.hidden {
+    margin-top: 30px;
+    display: none;
+}
+
+#welcome {
+    cursor: pointer;
+}

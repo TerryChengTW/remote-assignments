@@ -26,7 +26,7 @@ public class UserController {
     }
     @GetMapping("/member")
     public String member() {
-        return "member"; // 渲染 templates 目錄中的 member.html
+        return "member";
     }
 
 
